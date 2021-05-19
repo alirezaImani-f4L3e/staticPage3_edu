@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontAwsome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="d-flex">
+        <div>
+            <a href="#">
+                <img src="img/images/logo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="d-flex" id="menu">
+                <li>Home</li>
+                <li>about</li>
+                <li>destination</li>
+                <li>pages</li>
+                <li>blog</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+        <div>
+            <div class="search-icon">
+                <a href="#">
+                    <i class="fa fa-search font-15"></i>
+                </a>
+            </div>
+            <div class="drop-down-menu" onclick="show()">
+                <a href="#">
+                    <i class="fa fa-bars font-15"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slider-text">
+                <h3>Australia</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, quas.</p>
+                <a href="#" class="slider-btn">Explore now</a>
+            </div>
+        </section>
+        <section class="search-bar d-flex">
+            <h3>where you want to go?</h3>
+            <form action="" class="d-flex search-form">
+                <input type="text" placeholder="Where to go?">
+                <input type="text" placeholder="Where to go?">
+                <input type="text" placeholder="Where to go?">
+                <button class="search-btn" type="submit">search</button>
+            </form>
+
+        </section>
+        <section class="popular">
+            <section class="row popular-heading">
+                <h3 class="popular-title">Lorem ipsum dolor sit.</h3>
+                <p class="popular-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum expedita omnis.</p>
+
+            </section>
+            <section class="row popular-content">
+                <article class="article-1">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+                <article class="article-2">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+                <article class="article-3">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+                <article class="article-4">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+                <article class="article-5">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+                <article class="article-6">
+                    <p>italy <a href="#">7 places</a></p>
+                </article>
+
+            </section>
+
+        </section>
+        <section class="news-letter d-flex">
+            <div class="news-letter-container row">
+                <div class="news-letter-text d-flex">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta praesentium inventore quam placeat eaque?
+
+                    </p>
+                </div>
+                <div class="mail-form ">
+                    <input type="email" placeholder="Your email">
+                    <button class="news-letter-btn" type="submit">subscribe</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="video">
+            <div class="video-container d-flex">
+                <h3>enjoy video</h3>
+                <div class="video-btn d-flex">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                    </i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="row">
+
+        <div class="left-footer">
+            <img src="img/images/footer_logo.png" alt="" class="footer-img">
+            <ul class="footer-info">
+                <li>Lorem ipsum dolor sit.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </div>
+        <div class="right-footer">
+            <h3 class="footer-title">Lorem, ipsum dolor.</h3>
+            <ul class="links">
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+                <li><a href="#">iran</a></li>
+            </ul>
+            <section class="clear-fix"></section>
+
+
+        </div>
+    </footer>
+</body>
+
+<script>
+    function show() {
+        var li = document.querySelectorAll("nav li");
+        var search = document.getElementsByClassName('search-icon');
+        var bar = document.getElementsByClassName('drop-down-menu');
+
+        alert("hello");
+        var menu = document.getElementById('menu');
+        if (menu.className == "d-flex") {
+            menu.className += " show"
+            for (var j in li) {
+                li[j].style.display = "flex";
+                // search.style.height = "20%";
+            }
+
+        } else {
+            menu.className = "d-flex";
+            for (var j in li) {
+                li[j].style.display = "none";
+
+            }
+
+        }
+
+
+        search[0].style.display = "none!important";
+
+    }
+</script>
+
+</html>
